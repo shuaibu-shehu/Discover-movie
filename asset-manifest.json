@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Discocer-movie/static/css/main.30e51f88.css",
+    "main.js": "/Discocer-movie/static/js/main.2fc632f4.js",
+    "index.html": "/Discocer-movie/index.html",
+    "main.30e51f88.css.map": "/Discocer-movie/static/css/main.30e51f88.css.map",
+    "main.2fc632f4.js.map": "/Discocer-movie/static/js/main.2fc632f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30e51f88.css",
+    "static/js/main.2fc632f4.js"
+  ]
+}
