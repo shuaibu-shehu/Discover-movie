@@ -20,7 +20,18 @@ img{
 
 @media (max-width:540px) {
     .card{
-       min-width: 140px;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+       min-width: 120px;
        font-size:var(--size-xs) ;
+       height: 150px;
     }
+    img{
+     /* height: 50%; */
+     width: 90%;
+     height: 50%;
+    }
+
 }

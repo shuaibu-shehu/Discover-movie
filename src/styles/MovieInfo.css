@@ -1,4 +1,5 @@
 .movie-info{
+
     display: flex;
     flex-direction: column;
     gap: var(--size-3xl);
@@ -6,7 +7,7 @@
     padding: var(--size-sm);
     line-height: var(--size-3xl);
     position: relative;
-    top: var(--size-7xl);
+    
     margin-top: -50px;
 }
 
@@ -21,7 +22,6 @@ a{
     width: var(--size-9xl);
     text-align: center;
     font-size: var(--size-sm);
-    /* padding: var(--size-sm); */
     border-radius: 10px;
 }
 
@@ -33,6 +33,7 @@ a{
         overflow: hidden;
         font-size: var(--size-xs);
         gap: var(--size-sm);
+        top: 18rem;
     }
     a{
 padding: var(--size-xm);

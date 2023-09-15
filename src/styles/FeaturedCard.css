@@ -7,13 +7,19 @@ flex-wrap: wrap;
 padding: var(--size-lg);
 }
 .featuredcard{
-  /* height: 340px; */
+  /* height: 140px; */
   width: 200px;
   background-color: var(--clr-light);
   color: var(--clr-dark);
-  position: relative;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+}
+.featuredcard img{
+  width: 100%;
+  height:100% ;
+}
 ion-icon{
   z-index: 3;
   cursor: pointer;
@@ -21,3 +27,9 @@ ion-icon{
   font-size: var(--size-4xl);
 }
 
+@media (min-width:540px) {
+  .featuredcard img{
+    height: 90%;
+    width: 90%;
+  }
+}
