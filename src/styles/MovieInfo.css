@@ -1,0 +1,40 @@
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3xl);
+    width: 40%;
+    padding: var(--size-sm);
+    line-height: var(--size-3xl);
+    position: relative;
+    top: var(--size-7xl);
+    margin-top: -50px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: var(--clr-light);
+    background-color: var(--clr-rose);
+    width: var(--size-9xl);
+    text-align: center;
+    font-size: var(--size-sm);
+    padding: var(--size-sm);
+    border-radius: 10px;
+}
+
+@media (max-width:540px) {
+    .movie-info{
+        width: 90%;
+        margin-top: -70px;
+        height: 40vh;
+        overflow: hidden;
+        font-size: var(--size-xs);
+        gap: var(--size-sm);
+    }
+    a{
+padding: var(--size-xm);
+    }
+}

@@ -1,0 +1,58 @@
+.search-movie{
+    /* height: 400px; */
+background-position: center;
+background-repeat: no-repeat;
+color: var(--clr-light);
+min-height: 100vh;
+padding-top: var(--size-4xl);
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.cards-container{
+    padding: 5px;
+    border: 3px solid var(--clr-rose-light);
+    width: 60%;
+    height: 90vh;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:#323232;
+    ;
+    border-radius: 6px;
+}
+
+@media (max-width:540px){
+    .container{
+        flex-direction: column;;
+    }   
+    .cards-container{
+        margin-top: var(--size-4xl);
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        /* flex-direction: row; */
+        order: -1;
+        overflow-x: scroll;
+        flex-wrap:unset;
+    
+    }
+}
+

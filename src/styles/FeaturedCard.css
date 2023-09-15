@@ -1,0 +1,15 @@
+.featured-container{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: var(--size-lg);
+flex-wrap: wrap;
+padding: var(--size-lg);
+}
+.featuredcard{
+  /* height: 340px; */
+  width: 200px;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+

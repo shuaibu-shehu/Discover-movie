@@ -1,0 +1,65 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* padding:var(--size-lg); */
+    color: var(--clr-light);
+    
+}
+
+.tv-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-field-container{
+    position: relative;
+    /* top:var(--size-lg); */
+    width: 50%;
+}
+
+.search-field-container input{
+    padding: 8px 8% 8px 14px;
+    width: 100%;
+    border: 2px solid #d4cdcd;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    color: var(--clr-light);
+}
+
+.search-field-container ion-icon{
+position: absolute;
+top: 50%;
+right: 4%;
+transform: translateY(-85%);
+}
+
+.sign-in{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.sign-in ion-icon{
+    background-color: var(--clr-rose);
+}
+
+.sign-in button{
+    background-color: transparent;
+    font-size: var(--size-sm);
+    outline: none;
+    border: none;
+    color: var(--clr-light);
+
+}
+
+@media (max-width:540px) {
+    .search-field-container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(50px);
+    }
+}
