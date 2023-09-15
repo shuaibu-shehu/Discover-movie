@@ -9,7 +9,7 @@ export default function Homepage() {
   const getTopMovies = async () => {
     //  e.preventDefault();
 
-    const url = `https://api.themoviedb.org/3/movie/popular?api_key=732e7e4c2148b94995d37bb75b1b2aa9`;
+    const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=732e7e4c2148b94995d37bb75b1b2aa9`;
 
     const res = await fetch(url);
     const data = await res.json();

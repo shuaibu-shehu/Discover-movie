@@ -2,7 +2,7 @@ import "../styles/Header.css"
 import { useState } from "react";
 
 
-export default function Header({setMovies}){
+export default function Header({setMovies,setTrack}){
   
     
     //states- input query, movies
@@ -36,6 +36,7 @@ export default function Header({setMovies}){
         value={query} 
         
         onChange={(e) => {
+          setTrack(e.target.value)
           setQuery(e.target.value)
           searchMovies(e);
         }}

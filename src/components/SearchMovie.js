@@ -13,21 +13,24 @@ export default function SearchMovie(){
    const searchedResults=movies.map(movie=>{
    return <SearchedMovieCard {...movie} key={movie.id} />
    })
-   console.log(searchedResults);
+  const [track, setTrack]=useState(''); 
     return (
         <div 
         style={{
             backgroundImage:`url(${'Poster.png'})`
             }} 
         className="search-movie">
-        <Header setMovies={setMovies} />
+        <Header setMovies={setMovies} setTrack={setTrack} />
             <div className="container">
        <MovieInfo />
+       {
+        track &&
         <div className="cards-container">
             
             {searchedResults}
         
         </div>
+        }
             </div>
     </div>
     )
