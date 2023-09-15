@@ -27,7 +27,7 @@ export default function Header({setMovies}){
 
   return (  <div className="header">
         <div className="tv-icon-container">
-        <img src="tv.png"/>
+        <img src="tv.png" />
         <p>MovieBox</p>
         </div>
         <div className="search-field-container">

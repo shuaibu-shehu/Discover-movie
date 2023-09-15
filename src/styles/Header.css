@@ -1,7 +1,7 @@
 .header{
     display: flex;
     justify-content: space-between;
-    /* padding:var(--size-lg); */
+    /* margin:var(--size-lg); */
     color: var(--clr-light);
     
 }
@@ -34,6 +34,7 @@ position: absolute;
 top: 50%;
 right: 4%;
 transform: translateY(-85%);
+font-size: var(--size-lg);
 }
 
 .sign-in{
@@ -61,5 +62,8 @@ transform: translateY(-85%);
         position: absolute;
         left: 50%;
         transform: translateX(-50%) translateY(50px);
+    }
+    .search-field-container ion-icon{
+       top: 70%; 
     }
 }

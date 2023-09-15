@@ -11,5 +11,13 @@ padding: var(--size-lg);
   width: 200px;
   background-color: var(--clr-light);
   color: var(--clr-dark);
+  position: relative;
+}
+
+ion-icon{
+  z-index: 3;
+  cursor: pointer;
+   color: #aebfc6ac;
+  font-size: var(--size-4xl);
 }
 

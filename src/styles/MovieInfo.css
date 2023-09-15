@@ -21,7 +21,7 @@ a{
     width: var(--size-9xl);
     text-align: center;
     font-size: var(--size-sm);
-    padding: var(--size-sm);
+    /* padding: var(--size-sm); */
     border-radius: 10px;
 }
 

@@ -1,7 +1,7 @@
 import "../styles/searchedMovieCard.css"
 
 export default function SearchedMovieCard(props){
-    console.log(props.title);
+
     return (
         <div className="card"
         data-testid=" movie-card"

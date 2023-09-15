@@ -15,8 +15,10 @@ padding-top: var(--size-4xl);
     padding: 10px;
 }
 .cards-container{
+
+    z-index: 10;
     padding: 5px;
-    border: 3px solid var(--clr-rose-light);
+    /* border: 3px solid var(--clr-rose-light); */
     width: 60%;
     height: 90vh;
     display: flex;

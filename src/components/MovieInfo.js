@@ -7,7 +7,7 @@ export default function MovieInfo(){
         <p className="movie-overview">
         John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
         </p>
-        <a href="#"><ion-icon name="logo-youtube"></ion-icon> Watch Trailer</a>
+        <a href="https://www.youtube.com/watch?v=yjRHZEUamCc"><ion-icon name="logo-youtube"></ion-icon> Watch Trailer</a>
     </div>
     )
 }

@@ -9,7 +9,7 @@ export default function Homepage() {
   const getTopMovies = async () => {
     //  e.preventDefault();
 
-    const url = `https://api.themoviedb.org/3/movie/top_rated?api_key=732e7e4c2148b94995d37bb75b1b2aa9`;
+    const url = `https://api.themoviedb.org/3/movie/popular?api_key=732e7e4c2148b94995d37bb75b1b2aa9`;
 
     const res = await fetch(url);
     const data = await res.json();
@@ -19,19 +19,26 @@ export default function Homepage() {
     getTopMovies();
   }, []);
 
-let topMovies=movies.map(movie=>{
+let topMovies=movies.map((movie,index)=>{
+        // console.log(index);
         return <FeaturedCard {...movie} key={movie.id} />
         
 })
+let topTen=[];
+  for(let i=0; i<10; i++){
+    topTen.push(topMovies[i])
+  }
 
 
   return (
     <div className="homepage">
       <SearchMovie  />
 
-      <div className="featured-container">   
-          {topMovies}
-      
+      <div className="featured-container"> 
+      <h1>TOP TEN</h1>  
+      <div className="top-ten-grid">
+          {topTen}
+      </div>
       </div>
     </div>
   );

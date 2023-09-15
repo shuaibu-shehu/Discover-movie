@@ -1,4 +1,3 @@
-import { paste } from "@testing-library/user-event/dist/paste";
 import "../styles/SearchMovie.css"
 import Header from "./Header.js"
 import SearchedMovieCard from "./searchedMovieCard"
