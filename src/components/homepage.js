@@ -28,7 +28,7 @@ export default function Homepage() {
 
  
   
-  let topMovies=movies.map((movie,index)=>{
+  let topMovies=movies.map((movie)=>{
     return <FeaturedCard {...movie} key={movie.id} />
   })
   let topTen=topMovies.slice(0,10);
@@ -39,7 +39,7 @@ export default function Homepage() {
       <SearchMovie  />
 
       <div className="featured-container"> 
-      <h1>TOP TEN</h1>  
+      <h1>Featured</h1>  
       <div className="top-ten-grid">
           {topTen}
       </div>

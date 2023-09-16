@@ -1,0 +1,17 @@
+.single-movie-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.single-movie-container img{
+    width: 80%;
+}
+
+.single-movie-container h2{
+    margin: 10px;
+}
