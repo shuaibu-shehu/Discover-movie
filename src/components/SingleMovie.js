@@ -18,6 +18,7 @@ export default function SingleMovie(){
         .then(res=>setMovie(res.data))
         .catch(err=>console.log(err));
     }, [id]);
+    
   if(!movie){
     return (
         <div>
@@ -25,6 +26,9 @@ export default function SingleMovie(){
         </div>
     )
 }
+const releaseDate = new Date(movie.release_date).toLocaleDateString(undefined, {
+    timeZone: 'UTC',
+  });
   
     return (
          <div className='single-movie-container'>
@@ -34,7 +38,8 @@ export default function SingleMovie(){
         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
         alt={`Poster for ${movie.title}`}/>
             <h3 data-testid="movie-title">{movie.title}</h3>
-            <p data-testid="movie-release-date">{movie.release_date}</p>
+            <p data-testid="movie-release-date">{releaseDate}</p>
+            <h4 data-testis="movie-runtime">{movie.runtime}</h4>
             <p data-testid="movie-overview">{movie.overview}</p>
             <Link to="/">Back to home</Link>
          </div>
